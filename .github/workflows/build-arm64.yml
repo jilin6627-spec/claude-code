@@ -1,20 +1,20 @@
 name: Build and Push Docker Image (arm64)
 
 on:
- workflow_dispatch:
- inputs:
- claude_code_version:
- description: "Claude Code CLI version"
- required: true
- default: "latest"
- claudish_version:
- description: "Claudish release tag"
- required: true
- default: "v6.12.0"
- image_tag:
- description: "Image tag"
- required: true
- default: "v0.1.0"
+  workflow_dispatch:
+    inputs:
+      claude_code_version:
+        description: "Claude Code CLI version"
+        required: true
+        default: "latest"
+      claudish_version:
+        description: "Claudish release tag"
+        required: true
+        default: "v6.12.0"
+      image_tag:
+        description: "Image tag"
+        required: true
+        default: "v0.1.0"
 
 permissions:
  contents: read
